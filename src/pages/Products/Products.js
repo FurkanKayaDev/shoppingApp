@@ -42,10 +42,10 @@ function Products({navigation}) {
             <View style={{flexDirection: 'row'}}>
               <Icon
                 name="shoppingcart"
-                size={40}
+                size={45}
                 style={{marginRight: 10, color: 'orange'}}
               />
-              <Text style={{fontSize: 30, color: 'orange', fontWeight: 'bold'}}>
+              <Text style={{fontSize: 35, color: 'orange', fontWeight: 'bold'}}>
                 Shopping App
               </Text>
             </View>

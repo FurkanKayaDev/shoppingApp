@@ -35,7 +35,7 @@ export default StyleSheet.create({
   myStarStyle: {
     color: 'orange',
     backgroundColor: 'transparent',
-    textShadowColor: 'black',
+    textShadowColor: 'gray',
     textShadowOffset: {width: 1, height: 1},
     textShadowRadius: 2,
     fontSize: 20,

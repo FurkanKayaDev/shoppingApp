@@ -31,8 +31,8 @@ function Cart({item}) {
     }
   }, [totalPrice]);
 
-  const remove = fav => {
-    dispatch(REMOVE_CART(fav));
+  const remove = item => {
+    dispatch(REMOVE_CART(item));
   };
 
   return (
@@ -40,16 +40,16 @@ function Cart({item}) {
       <ScrollView>
         {Cart.length === 0 && <EmptyPage />}
         <View>
-          {Cart.map(fav => (
-            <View key={fav.id} style={styles.inner_container}>
+          {Cart.map(item => (
+            <View key={item.id} style={styles.inner_container}>
               <View>
-                <Image style={styles.image} source={{uri: fav.image}} />
+                <Image style={styles.image} source={{uri: item.image}} />
               </View>
               <View style={styles.content}>
-                <Text style={styles.title}>{fav.title}</Text>
+                <Text style={styles.title}>{item.title}</Text>
                 <TouchableOpacity
                   style={styles.title}
-                  onPress={() => remove(fav.id)}>
+                  onPress={() => remove(item.id)}>
                   <Text style={{textAlign: 'right'}}>
                     <Icon name="cart-remove" size={28} color="red" />
                   </Text>
@@ -57,7 +57,7 @@ function Cart({item}) {
                 <View style={styles.price_container}>
                   <Text style={styles.price_text}>Price</Text>
 
-                  <Text style={styles.container_price}>{fav.price}$</Text>
+                  <Text style={styles.container_price}>{item.price}$</Text>
                 </View>
               </View>
             </View>

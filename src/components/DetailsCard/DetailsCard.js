@@ -64,8 +64,8 @@ function DetailsCard({item}) {
                 <Text style={styles.btn_text}>Add favourite</Text>
                 <Icon
                   name="cards-heart"
-                  size={18}
-                  color="red"
+                  size={16}
+                  color="black"
                   style={{marginLeft: 5}}
                 />
               </TouchableOpacity>
@@ -75,8 +75,8 @@ function DetailsCard({item}) {
                 <Text style={styles.btn_text}>Add to cart</Text>
                 <Icon
                   name="cart"
-                  size={18}
-                  color="red"
+                  size={16}
+                  color="black"
                   style={{marginLeft: 5}}
                 />
               </TouchableOpacity>

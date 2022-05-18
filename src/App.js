@@ -28,8 +28,6 @@ const HomeNavigator = () => {
           title: 'Product Detail',
           headerTitleAlign: 'center',
           headerTintColor: 'orange',
-          headerLeftLabelVisible: true,
-          headerLeftContainerStyle: '',
         }}
       />
     </Stack.Navigator>
@@ -45,9 +43,10 @@ const App = () => {
           component={HomeNavigator}
           options={{
             headerShown: false,
-            tabBarIcon: ({size, color}) => (
-              <Icon name={'home'} size={24} color={'#3e4a5b'} />
-            ),
+            tabBarIcon: ({focused, color, size}) => {
+              const icon = focused ? 'bell' : 'home';
+              return <Icon name="home" color={color} size={24} />;
+            },
           }}
         />
         <Tab.Screen
@@ -57,8 +56,8 @@ const App = () => {
             title: 'Favourites List',
             headerTitleAlign: 'center',
             headerTintColor: 'orange',
-            tabBarIcon: ({size, color}) => (
-              <Icon name={'heart'} size={24} color={'#3e4a5b'} />
+            tabBarIcon: ({focused, color, size}) => (
+              <Icon name={'heart'} size={24} color={color} />
             ),
           }}
         />
@@ -69,8 +68,8 @@ const App = () => {
             title: 'Cart',
             headerTitleAlign: 'center',
             headerTintColor: 'orange',
-            tabBarIcon: ({size, color}) => (
-              <Icon name={'shopping-cart'} size={24} color={'#3e4a5b'} />
+            tabBarIcon: ({focused, color, size}) => (
+              <Icon name={'shopping-cart'} size={24} color={color} />
             ),
           }}
         />

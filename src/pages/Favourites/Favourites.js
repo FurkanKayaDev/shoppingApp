@@ -35,7 +35,7 @@ function Favourites({navigation}) {
               <TouchableOpacity
                 style={styles.btn}
                 onPress={() => remove(fav.id)}>
-                <Text style={styles.btn_text}>Kaldır</Text>
+                <Text style={styles.btn_text}>Remove</Text>
               </TouchableOpacity>
             </View>
           </TouchableOpacity>

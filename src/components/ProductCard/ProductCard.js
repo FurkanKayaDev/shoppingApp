@@ -12,8 +12,10 @@ function ProductCard({product}) {
     <View style={styles.container}>
       {status === 'loading' && <Loading />}
       {status !== 'loading' && (
-        <View>
-          <Image style={styles.image} source={{uri: product.image}} />
+        <View style={{justifyContent: 'space-between'}}>
+          <View style={{borderBottomWidth: 0.5}}>
+            <Image style={styles.image} source={{uri: product.image}} />
+          </View>
           <View style={styles.body_container}>
             <Text style={styles.title} numberOfLines={1}>
               {product.title}
@@ -26,7 +28,7 @@ function ProductCard({product}) {
                   default={product.rating.rate}
                   starSize={12}
                   disabled={true}
-                  fullStar={<Icon name={'star'} style={[styles.myStarStyle]} />}
+                  fullStar={<Icon name={'star'} style={styles.myStarStyle} />}
                   emptyStar={
                     <Icon
                       name={'star-outline'}
