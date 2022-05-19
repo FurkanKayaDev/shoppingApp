@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/103508575/169359481-88a953be-bebf-49ec
 ## Başlangıç
 Bu depoyu yerel makinenizde klonlayın.
 ```
-git clone https://github.com/Lyndray/CodeWork-ReactNative.git
+git clone https://github.com/Lyndray/shoppingApp.git
 ```
 
 Kullanım
