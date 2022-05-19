@@ -13,8 +13,7 @@
 * Loading ve Error componentları
 * Asenktron yapı
 
-
-https://user-images.githubusercontent.com/103508575/169358793-6da37a33-f7bd-4093-b271-d18c6f082df5.mp4
+https://user-images.githubusercontent.com/103508575/169359481-88a953be-bebf-49ec-9e77-657dbf1a6cb5.mp4
 
 
 ## Başlangıç
