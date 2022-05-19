@@ -19,7 +19,6 @@ function DetailsCard({item}) {
   const addCart = item => {
     dispatch(ADD_CART(item));
   };
-
   return (
     <View style={styles.container}>
       {status === 'loading' && <Loading />}

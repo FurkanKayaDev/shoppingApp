@@ -14,11 +14,9 @@ function Favourites({navigation}) {
   const remove = fav => {
     dispatch(REMOVE_FAV(fav));
   };
-
   const handleGoDetail = id => {
     navigation.navigate('DetailPage', {id});
   };
-
   return (
     <View style={{backgroundColor: '#e0e0e0', flex: 1}}>
       <ScrollView>

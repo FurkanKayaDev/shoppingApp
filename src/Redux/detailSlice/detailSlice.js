@@ -21,7 +21,7 @@ export const detailSlice = createSlice({
     ADD_FAVOURITES: (state, action) => {
       if (state.favourites.find(item => item.id === action.payload.id)) {
         showMessage({
-          message: 'You have already add this product',
+          message: 'Shopping App',
           description: 'Successfully completed',
           type: 'danger',
         });

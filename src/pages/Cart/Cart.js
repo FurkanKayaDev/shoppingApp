@@ -20,7 +20,6 @@ function Cart({item}) {
   Cart.map(element =>
     (totalPrice += Math.round(Number(element.price) * 100) / 100).toFixed(2),
   );
-
   useEffect(() => {
     if (totalPrice === 0) {
       setComplete(true);
@@ -34,7 +33,6 @@ function Cart({item}) {
   const remove = item => {
     dispatch(REMOVE_CART(item));
   };
-
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -56,7 +54,6 @@ function Cart({item}) {
                 </TouchableOpacity>
                 <View style={styles.price_container}>
                   <Text style={styles.price_text}>Price</Text>
-
                   <Text style={styles.container_price}>{item.price}$</Text>
                 </View>
               </View>

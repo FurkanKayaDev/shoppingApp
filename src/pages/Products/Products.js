@@ -22,11 +22,9 @@ function Products({navigation}) {
       dispatch(fetchProducts());
     }
   }, []);
-
   if (status === 'failse') {
     return <Error message={error} />;
   }
-
   return (
     <View style={{backgroundColor: '#e0e0e0', flex: 1}}>
       {status === 'loading' && <Loading />}
