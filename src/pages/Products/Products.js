@@ -13,7 +13,7 @@ function Products({navigation}) {
   const product = useSelector(state => state.products.items);
   const status = useSelector(state => state.products.status);
 
-  const handleGoDetail = (id, title) => {
+  const handleGoDetail = id => {
     navigation.navigate('DetailPage', {id});
   };
 
@@ -22,7 +22,7 @@ function Products({navigation}) {
       dispatch(fetchProducts());
     }
   }, []);
-  if (status === 'failse') {
+  if (status === 'falsee') {
     return <Error message={error} />;
   }
   return (
