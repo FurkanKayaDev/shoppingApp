@@ -22,7 +22,7 @@ function Products({navigation}) {
       dispatch(fetchProducts());
     }
   }, []);
-  if (status === 'falsee') {
+  if (status === 'false') {
     return <Error message={error} />;
   }
   return (
