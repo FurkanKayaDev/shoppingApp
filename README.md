@@ -14,6 +14,7 @@
 * Asenktron yapı 
 
 https://user-images.githubusercontent.com/103508575/169359481-88a953be-bebf-49ec-9e77-657dbf1a6cb5.mp4
+![giff](https://user-images.githubusercontent.com/103508575/194408920-6406dcf3-382a-4c1e-8c10-6d5370fabb0f.gif)
 
 ## Başlangıç
 Bu depoyu yerel makinenizde klonlayın.
